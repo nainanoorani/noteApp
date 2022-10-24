@@ -6,11 +6,10 @@ const userId = cookieArr[1];
 const submitForm = document.getElementById("note-form");
 const noteContainer = document.getElementById("note-container");
 
-//Modal Elements. These are different than what's in the handout
-//let noteBody = document.getElementById("note-input");
-//let updateNoteBtn = document.getElementById("submit-button");
-let noteBody = document.getElementById("note-body");
-let updateNoteBtn = document.getElementById("update-note-button");
+
+let noteBody = document.getElementById("note-input");
+let updateNoteBtn = document.getElementById("submit-button");
+
 
 const headers = {
     'Content-Type': 'application/json'

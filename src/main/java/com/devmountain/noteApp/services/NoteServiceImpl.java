@@ -27,6 +27,10 @@ public class NoteServiceImpl implements NoteService {
         Optional<User> userOptional = userRepository.findById(userId);
         Note note = new Note(noteDto);
         userOptional.ifPresent(note::setUser);
+        //means this
+        //if(userOptional.isPresent()){
+        //note.setUser(userOptional.get());
+        //}
         noteRepository.saveAndFlush(note);
     }
     @Override

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
+//contains endpoints for all methods of the note class
 @RestController
 @RequestMapping("/apu/v1/notes")
 public class NoteController {
